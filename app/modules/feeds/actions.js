@@ -1,4 +1,5 @@
 import axios from 'axios';
+import jsonp from 'jsonp';
 import * as types from './types';
 
 export function getUserFeeds(profileId) {
@@ -10,10 +11,19 @@ export function getUserFeeds(profileId) {
   };
 }
 
+function getNextPage(url) {
+  const promise = new Promise((resolve, reject) => {
+    jsonp(url, null, (err, data) => {
+      if (err) reject(err);
+      resolve(data);
+    });
+  });
+
+  return promise;
+}
 export function loadMore(url) {
-  console.log('URL', url);
   return {
     type: types.LOAD_MORE,
-    payload: axios.get(url).then(response => response.data),
+    payload: getNextPage(url),
   };
 }

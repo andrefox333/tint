@@ -5,8 +5,6 @@ import FeedList from './FeedList';
 import UserInputField from './UserInputField';
 import LoadMore from './LoadMore';
 import * as actions from '../actions';
-import styles from '../../main.css';
-
 /**
  * ViewFeed is the main container component that holds of the necessary components
  */
@@ -35,7 +33,7 @@ export class ViewFeed extends Component {
   render() {
     const { hasNextPage, list } = this.props;
     return (
-      <div className={`container ${styles['view-feed-page']}`}>
+      <div className="container">
         <UserInputField onBtnClick={this.handleBtnClick} />
         <FeedList list={list} />
         <LoadMore

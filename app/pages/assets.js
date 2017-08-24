@@ -1,7 +1,7 @@
-import chromeFavicon from '../images/chrome-ninja192-precomposed.png';
-import appleFavicon from '../images/apple-ninja152-precomposed.png';
-import msFavicon from '../images/ms-ninja144-precomposed.png';
-import favicon from '../images/favicon.png';
+import chromeFavicon from '../images/cropped-TINT-icon-45x45.png';
+import appleFavicon from '../images/cropped-TINT-icon-45x45.png';
+import msFavicon from '../images/cropped-TINT-icon-45x45.png';
+import favicon from '../images/cropped-TINT-icon-45x45.png';
 
 const metaAssets = () => {
   return [
