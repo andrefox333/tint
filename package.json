@@ -1,6 +1,6 @@
 {
   "name": "andre-tint-assignment",
-  "version": "3.4.1",
+  "version": "0.0.1",
   "description": "A mini app that demos a new theme for Tint",
   "main": "index.js",
   "scripts": {
