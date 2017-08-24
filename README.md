@@ -3,7 +3,7 @@
 
 > I decided to use React to demo how we can componentize the different sections of an item. Also using Redux to demo how to store and fetch data from the given API call which is proxied from our Node.js server.
 
-The actual components are in [**https://foxtint.herokuapp.com/**](https://github.com/andrefox333/tint/tree/master/app/modules/feeds)
+The actual components are in [**/app/modules/feeds**](https://github.com/andrefox333/tint/tree/master/app/modules/feeds)
 
 - ViewFeed.jsx is the actual page container.
 - FeedItem.jsx is the main component foreach item being iterated in the data response and from there, the components and styles are then modularized to Thumbnail, Author, and so on. 
