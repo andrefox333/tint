@@ -23,3 +23,5 @@ In feeds, I then have the following files and folders:
 When working on the feature feeds, I can quickly isolate myself within this directory and not worry about cross-contaminating other files and I feel this is more intuitive to locate the files you need.
 
 #### Demo site: [**https://foxtint.herokuapp.com/**](https://foxtint.herokuapp.com/)
+
+Tint Profiles: `helloandrefox` and `catlovers`
