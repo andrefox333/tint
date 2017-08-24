@@ -1,0 +1,20 @@
+.load-more-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.button {
+  height: 30px;
+  width: 200px;
+  border: 1px solid #37cdff;
+  background: #37cdff;
+  border-radius: 1px;
+  color: white;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: #00a2d8;
+  background: #00a2d8;
+}

@@ -1,0 +1,32 @@
+.container {
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fb5a3c;
+  padding-top: 10px;
+}
+
+.input {
+  margin-right: 10px;
+  height: 26px;
+  width: 200px;
+  border-radius: 1px;
+  box-shadow: 0;
+  padding: 3px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  height: 26px;
+  border: 1px solid #37cdff;
+  background: #37cdff;
+  border-radius: 1px;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: #00a2d8;
+  background: #00a2d8;
+}
