@@ -21,9 +21,11 @@
   height: 26px;
   border: 1px solid #37cdff;
   background: #37cdff;
-  border-radius: 1px;
+  border-radius: 5px;
   color: white;
   cursor: pointer;
+  margin: 0 5px;
+
 }
 
 .button:hover {
