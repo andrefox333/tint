@@ -16,10 +16,11 @@ export class ViewFeed extends Component {
   /**
    * Dispatches an action to get the feed for the given profile
    * @param {String} profile
+   * @param {String} source
    */
-  handleBtnClick = (profile) => {
+  handleBtnClick = (profile, source) => {
     const { dispatch } = this.props;
-    dispatch(actions.getUserFeeds(profile));
+    dispatch(actions.getUserFeeds(profile, source));
   };
 
   /**
@@ -36,7 +37,7 @@ export class ViewFeed extends Component {
       <div className="container">
         <UserInputField onBtnClick={this.handleBtnClick} />
         <FeedList list={list} />
-        <LoadMore
+        <LoadMore 
           hasNextPage={hasNextPage}
           handleLoadMore={this.handleLoadMore}
         />

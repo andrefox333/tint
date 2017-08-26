@@ -2,12 +2,14 @@ import axios from 'axios';
 import jsonp from 'jsonp';
 import * as types from './types';
 
-export function getUserFeeds(profileId) {
+export function getUserFeeds(profileId, source) {
+  let url = `api/feeds/${profileId}`;
+  
+  if (source) url = `${url}?source=${source}`;
+
   return {
     type: types.GET_USER_FEEDS,
-    payload: axios
-      .get(`api/feeds/${profileId}`)
-      .then(response => response.data),
+    payload: axios.get(url).then(response => response.data),
   };
 }
 

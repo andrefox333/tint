@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from '../css/user-input-field.css';
+import * as constants from '../constants';
 
 export default class UserInputField extends Component {
   constructor(props) {
@@ -31,6 +32,15 @@ export default class UserInputField extends Component {
         >
           Change Feed
         </button>
+        {
+          constants.SOURCES.map((source) => {
+            return (
+              <button id={`btn-${source}`} className={styles.button} type="button" onClick={() => onBtnClick(profile, source)}>
+                {source}
+              </button>
+            );
+          })
+        }
       </div>
     );
   }
